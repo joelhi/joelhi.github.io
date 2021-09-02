@@ -22,6 +22,50 @@
 			height: auto;
 		}
 	</style>
+
+<style>
+	.container {
+	  position:relative;
+	  width: 100%;
+	  height: auto;
+	  
+	}
+	
+	.image {
+	  width: 100%;
+	  height: auto;
+	}
+	
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #aed8cf;
+	}
+	
+	.container:hover .overlay {
+	  opacity: 0.3;
+	}
+	
+	.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 90%;
+	  left: 20%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	</style>
+
 	<style>
 		@font-face {
 			font-family: "GeomanistRegularItalic";
@@ -63,7 +107,7 @@
 				<br>
 				<h1 style="font-family: 'ArchiaRegular';font-size: 14pt; color: #aaaaaa; ">Architect & Structural Engineer</h1>
 				<h1 style="font-family: 'ArchiaRegular';font-size: 14pt">
-					Computational Designer @ 
+					Computational Designer @
 						<a href="https://www.akt-uk.com/" target="_blank">
 						AKT II
 						</a>
@@ -113,79 +157,46 @@
 			</div>
 		</div>
 
-		<div style="margin-top: 150px;"></div>
+		<div style="margin-top: 50px;"></div>
 
 		<div class = "row">
 			<div class="col col-12-of-12 col-s-4-of-4 left" id="content">
-				<h3 style="font-family: 'ArchiaRegular';font-size: 14pt; text-align: left;"><u>Snippets</u></h3>
+				<h3 style="font-family: 'ArchiaRegular';font-size: 14pt; text-align: left;"><u>Snippets & Samples</u></h3>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col col-12-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/Dewitt IASS/render3.png" alt="IASS Pavillion top view" width="1000">
+			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
+				<p style="font-family: 'BasierRegular'; font-size: 10pt;">Projects</p>
+					<a href="pages/iass.html">
+						<img src="assets/Thumbnails/iass_thumb.png" alt="IASS Pavillion" width="1000">
+					</a>
 			</div>
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/Dewitt IASS/210301_iso_1_100 [Converted]-01.png" alt="IASS Pavillion top view" width="1000">
+			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
+				<p style="font-family: 'BasierRegular'; font-size: 10pt;">Things</p>
+				<a href="pages/difference.html">
+					<img src="assets/Thumbnails/difference_thumb.png" alt="3D print assembly" width="1000">
+				</a>
 			</div>
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/Dewitt IASS/210301_elevation_1_100 [Converted]2.png" alt="IASS Pavillion top view" width="1000">
-				<p style="font-family: 'ArchiaRegular'; font-size: 8pt; text-align: right;"><u><i>IASS Pavillion Proposal</i> - <b>2021</b></u></p>
-				<p style="font-family: 'BasierRegular'; font-size: 8pt; text-align:justify; color: #555555;">
-					Part of the team at AKT II that collaborated with artist DeWitt Godfrey
-					for a pavillion proposal for the IASS conference 2021. 
-
-					<br>
-					<br>
-
-					<i>More info to come</i>
-				</p>
+			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
+				<p style="font-family: 'BasierRegular'; font-size: 10pt;">Software & Plugins</p>
+				<a href="pages/g3.html">
+					<img src="assets/Thumbnails/mesh_thumb.png" alt="Bunny Skeleton Mesh" width="1000">
+				</a>
 			</div>
-		</div>
-		<div style="margin-top: 150px;"></div>
-		<div class="row">
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/WhatDiff/IMG_3691.png" alt="Model Pic" width="500">
-			</div>
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/WhatDiff/Front_PC_Color.png" alt="Point Cloud" width="500">
-				<p style="font-family: 'ArchiaRegular'; font-size: 8pt; text-align: right;"><u><i>What difference does it make</i> - <b>2018</b></u></p>
-				<p style="font-family: 'BasierRegular'; font-size: 8pt; text-align:justify; color: #555555;">
-					This design exploration is meant as a reflection on the
-					current media and representation through out the architectural
-					process. The course of design and communication
-					tools gave the task to “Remix” a facade using
-					transformation through different media, with a certain
-					emphasis on translations between digital and physical
-					representations. Different states of representation
-					bring out their own peculiarities or specific characters,
-					with each transformation bringing out a certain filter,
-					or set of artefacts. The purpose of this project is to use
-					those as a source of design.
-				</p>
+			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
+				<p style="font-family: 'BasierRegular'; font-size: 10pt;">Misc</p>
 			</div>
 		</div>
-		<div style="margin-top: 150px;"></div>
-		<div class="row">
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-
-			</div>
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<img src="assets/g3_gh/mesh.png" alt="Bunny Skeleton Mesh" width="500">
-				<p style="font-family: 'ArchiaRegular'; font-size: 8pt; text-align: right;"><u><i>Geometry Tools Grasshopper</i> - <b>2021</b></u></p>
-			</div>
-		</div>
-
-		
 
 		<div style="margin-bottom: 200px;"></div>
 
 		<div class="row">
 			<!-- Pushes and pulls are used in the same way as col-n-of-p. They can also be responsive, like pull-m-1-of-4 -->
-			<div class="col col-1-of-8">
+			<div class="col col-4-of-8">
 
-				<p style="font-family: 'Roboto Mono', monospace; font-size:12px">
-					Footer
+				<p style="font-family: 'ArchiaRegular'; font-size:12px">
+					Fonts: <a href="https://www.atipofoundry.com/fonts/archia">Archia</a> <a href="https://www.atipofoundry.com/fonts/basier">Basier</a>
 				</p>
 			</div>
 		</div>
