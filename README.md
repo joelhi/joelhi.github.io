@@ -1,4 +1,4 @@
 # joelhi.github.io
 Online portfolio
 
-[joelhilmersson.com](www.joelhilmersson.com)
+[joelhilmersson.com](https://joelhilmersson.com/)
