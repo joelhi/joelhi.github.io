@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IGA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.7.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h4 style="text-align: left; font-size: 12pt;">
+      <a class="main" href="../index.html">Return Home</a>
+    </h4>
+    <!-- <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"> -->
+    </a>
+  </div>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-6">
+            <h2 style="font-size: 20pt;"><u>Isogeometric Analysis & Form Finding</u></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <img src="../assets/iga/main_small.png" alt="Image" class="img-fluid">
+              <div style="margin-bottom: 50px;"></div>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <div>
+                <h4 style="font-size: 12pt;">M.Sc thesis project</h4>
+                <p class="mb-4"><span class="text-muted">Academic</span></p>
+
+                <p style="color: black;"><b>Tutor</b></p>
+                <p>Mats Ander, Jens Olsson</p>
+                <p style="color: black;"><b>Examiner</b></p>
+                <p><i>Prof. Fredrik Larsson</i></p>
+                <br>
+                <p style="color: black;"><b>Year</b></p>
+                <p>2018</p>
+                <br>
+                <p style="color: black;"><b>External Links</b></p>
+                <p><a href="https://odr.chalmers.se/handle/20.500.12380/301616?mode=full" target="_blank" class="main">Final Thesis</a></p>
+                <p><a href="../assets/papers/IASS2019_Isogeometric_JH.pdf" target="_blank" class="main">Paper</a></p>
+                <p><a href="https://github.com/joelhi/iga-matlab" target="_blank" class="main">IGA Code</a></p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-bottom: 100px;"></div>
+          <div class="row"> 
+            <div class="col-md-8" data-aos="fade-up">
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                Recent developments within the design of shells have seen an increased interest in utilizing active bending 
+                as form giving procedure. This enables complex structures to be built from simple off-the-shelf materials. 
+                However, forming bending-active structures is highly dependent on the material properties, which makes the design 
+                process reliant on either physical testing or digital simulations. An associated problem with the simulation of this 
+                behavior is the lack of integration between modeling and analysis in conventional simulation techniques, a crucial concern 
+                since the final design is always an equilibrium shape with requirements on both structural and spatial integrity. 
+                IsoGeometric Analysis (IGA) is a method that aims to bridge precisely that gap between analysis and design, making it a 
+                suitable method for bending active structural design. This thesis explores an approach to the modeling and digital design of 
+                actively bent shells using the implementation of nonlinear IGA.
+                
+              </p>
+              <br>
+              <br>
+              <br>
+              <img src="../assets/IGA/whatIsIGA.png" alt="Image" class="img-fluid" width="600px">
+              <br>
+              <br>
+              <br>
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                Isogeometric analysis is in many ways similar to regular FE analysis, with one major distinction. Instead
+                of using a discrete geometric representation it uses the smooth, continuous basis functions of NURBS as basis for the 
+                mathematical formulations. This removes the need for meshing and the design geometry can be used for analysis. This is especially
+                useful when dealing with actively bent shapes, as the design geometry will be a direct result of material properties, loads and an 
+                initial underformed geometry.
+              </p>
+              <br>
+              <br>
+              <br>
+              <img src="../assets/IGA/StatesOfNonlinearAnalysis [Converted]-01.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div style="margin-bottom: 100px;"></div>
+          <div class="row"> 
+            <div class="col-md-8" data-aos="fade-up">
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                By being able to relate the deformed and undeformed states of NURBS geometries, these can then be correlated to a 
+                stiffness distribution, in this case thickness. The gif below shows a backwards process of finding a stiffness distribution which puts the 
+                circular shape in equilibirum with reference to a planar representation. 
+              </p>
+              <br>
+              <br>
+              <br>
+              <img src="../assets/IGA/Circular.gif" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div style="margin-bottom: 100px;"></div>
+          <div class="row"> 
+            <div class="col-md-8" data-aos="fade-up">
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                A process like this enables material programming which can be used to manufacture intelligent components,
+                which need no construction information, as it's embedded in the material. The example below shows the form finding 
+                of bending a sheet into a specific shape as part of a temporary structure.
+              </p>
+              <br>
+              <br>
+              <br>
+              <img src="../assets/IGA/gif1.gif" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <div style="margin-bottom: 200px;"></div>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1" style="font-size: 8pt;">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+          <div class="credits" style="font-size: 8pt;">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -2,205 +2,431 @@
 <html lang="en">
 
 <head>
-	<title>Joel Hilmersson</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<link rel="stylesheet" href="css/main.css">
-	<!--<link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.min.css">-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<style>
-		@font-face {
-			font-family: "GeomanistRegular";
-			src: url("/fonts/Geomanist/geomanist-regular-webfont.ttf");
-		}
-	</style>
-	<style>
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<style>
-	.container {
-	  position:relative;
-	  width: 100%;
-	  height: auto;
-	  
-	}
-	
-	.image {
-	  width: 100%;
-	  height: auto;
-	}
-	
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #aed8cf;
-	}
-	
-	.container:hover .overlay {
-	  opacity: 0.3;
-	}
-	
-	.text {
-	  color: white;
-	  font-size: 20px;
-	  position: absolute;
-	  top: 90%;
-	  left: 20%;
-	  -webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	}
-	</style>
+  <title>Joel Hilmersson</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-	<style>
-		@font-face {
-			font-family: "GeomanistRegularItalic";
-			src: url("/fonts/Geomanist/geomanist-regular-italic-webfont.ttf");
-		}
-	</style>
-	<style>
-		@font-face {
-			font-family: "GeomanistBold";
-			src: url("/fonts/Geomanist/hinted-Geomanist-Bold.ttf");
-		}
-	</style>
-		<style>
-			@font-face {
-				font-family: "BasierRegular";
-				src: url("/fonts/Basier/basiersquare-regular-webfont.ttf");
-			}
-		</style>
-		<style>
-			@font-face {
-				font-family: "BasierBold";
-				src: url("/fonts/Basier/Basier\ Circle\ SemiBold.otf");
-			}
-		</style>
-		<style>
-			@font-face {
-				font-family: "ArchiaRegular";
-				src: url("/fonts/Archia_Regular/Archia Regular Webfont/archia-regular-webfont.ttf");
-			}
-		</style>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.7.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body style="background-color: #ffffff;">
-	<div class="grid">
-		<div class="row">
-			<div class="col col-9-of-12 col-s-4-of-4 left" id="content">
-				<h1 style="font-family: 'ArchiaRegular'; font-size: 14pt;"><u>Joel Hilmersson</u></h1>
-				<br>
-				<br>
-				<h1 style="font-family: 'ArchiaRegular';font-size: 14pt; color: #aaaaaa; ">Architect & Structural Engineer</h1>
-				<h1 style="font-family: 'ArchiaRegular';font-size: 14pt">
-					Computational Designer @
-						<a href="https://www.akt-uk.com/" target="_blank">
-						AKT II
-						</a>
-				</h1>
-			</div>
-			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
-				<div style="margin-top: 25px;"></div>
-				<img src="assets/Portrait/joel_ny_small.png" alt="Me" width="1000">
-			</div>
+<body>
 
-		</div>
+  <!-- ======= Navbar ======= -->
+  <!--   <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <span class="bi bi-twitter text-white mt-2 mr-3"></span>
+            <div>
+              <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore. <br> <a href="#">t.co/v82jsk</a></em></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Hire Me</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiisexplicabo inventore. <br> <a href="#">myemail@gmail.com</a></p>
+        </div>
+      </div>
 
-		<div style="margin-top: 100px;"></div>
+    </div>
+  </div> -->
 
-		<div class = "row">
-			<div class="col col-12-of-12 col-s-4-of-4 left" id="content">
-				<h3 style="font-family: 'ArchiaRegular';font-size: 14pt; text-align: left;"><u>About</u></h3>
-			</div>
-			
-		</div>
-		<div class="row">
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<p style="font-family: 'BasierRegular';font-size: 10pt; text-align:justify; color: #555555;">
-					<b>Aribererunt.</b> Ratemporpos debissint dolupta testis dolupta tempori osapers perisciet, si imaio minissitat labor aspedias utem cullaci tasint ilique aboreru ptatur reiciditaero dolore, nobis explit quiasi sincid qui repudist, 
-					officaborios qui que ipsa aut <b>offictatist</b>, etureribus etur? 
-					Ad qui non rerchil laborrum, utae nempor am fugiae magnis accatur, cuscipsam accus doluptatent.
-					Videlitaest, nullore mporum inti untemqui adipsantia volore exeribe ristectus.
-					Ur aditecea ad maximil laboriores res sed magnis ut quidusae alitistiis sequos porum reiumquost, te odis aut faceribus, offictur aligni nest, quo dolorro blabore sequae aperum audiandus, eosti volorem excerumquia plibusciet odictur, solest 
-					et quidus dolupta quasped molorumqui de vel expelle stiunt.
-					Igent aboremque volorem. Tionseque volorror maximpelia solupta turitibus perro officiis eossequi nis perio il es ea 
-					nonectem res eaquae nimolec tatiam qui ut que susda plibus voluptatem nimint quibus, sitibusandam que optum que nis molor susam fuga. Itatibus ilia quia paris quamenecus pra volum estioritatum am nobis eius est, sequia venieniet quas dolest arum re, vendit et ipis enesed moluptate doluptatiam, aut enis consequatur sus debis dereped molo conseque acerum eaturemque aut dem renditatur? Sintiossed ernate lautenda doluptatem incil ipit essum voloria doloren ihiliquae lis dolupta speratem aligenitate.
-				</p>
-			</div>
-			<div class="col col-6-of-12 col-s-4-of-4 left" id="content">
-				<p style="font-family: 'BasierRegular';font-size: 10pt; text-align:justify; color: #555555;">
-					Aribererunt. Ratemporpos debissint dolupta testis dolupta tempori osapers perisciet, si imaio minissitat labor aspedias utem cullaci tasint ilique aboreru ptatur reiciditaero dolore, nobis explit quiasi sincid qui repudist, 
-					officaborios qui que ipsa aut offictatist, etureribus etur? 
-					<br>
-					Igent aboremque volorem. Tionseque volorror maximpelia solupta turitibus perro officiis eossequi nis perio il es ea 
-					nonectem res eaquae nimolec tatiam qui ut que susda plibus voluptatem nimint quibus, sitibusandam que optum que nis molor susam fuga. Itatibus ilia quia paris quamenecus pra volum estioritatum am nobis eius est, sequia venieniet quas dolest arum re, vendit et ipis enesed moluptate doluptatiam, aut enis consequatur sus debis dereped molo conseque acerum eaturemque aut dem renditatur? Sintiossed ernate lautenda doluptatem incil ipit essum voloria doloren ihiliquae lis dolupta speratem aligenitate.
-				</p>
+  <div class="container">
+    <br>
+    <h4 style="text-align: right; font-size: 16pt;">
+      <a class="icon" href="assets/cv/CV_Joel_Hilmersson.pdf">cv</a>
+      <a class="icon" href="https://www.linkedin.com/in/joel-hilmersson-340272103/" target="_blank" style="padding: 24px 12px;">
+        <img src="assets/icons/linkedin.png" alt="Down" width="16" style="vertical-align:middle;">
+      </a>
+      <a class="icon" href="https://github.com/joelhi" target="_blank" style="padding: 12px 0;">
+        <img src="assets/icons/github.png" alt="Down" width="16" style="vertical-align:middle;">
+      </a>
+    </h4>
+    <h4 style="font-size: 12pt;">Joel Hilmersson</h4>
+    <!-- <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar"> -->
+    </a>
 
-			</div>
-		</div>
+  </div>
+  <div style="margin-bottom: 50px;"></div>
+  <div class="container">
+    <h4 style="color: #aaaaaa; font-size: 12pt;">Architect, Structural Engineer & Programmer</h4>
+    <h4 style="color: #aaaaaa; font-size: 12pt;">
+      Computational Designer @
+      <a class="main" href="https://www.akt-uk.com/" target="_blank">
+        AKT II
+      </a>
+    </h4>
+  </div>
 
-		<div style="margin-top: 50px;"></div>
+  <main id="main">
 
-		<div class = "row">
-			<div class="col col-12-of-12 col-s-4-of-4 left" id="content">
-				<h3 style="font-family: 'ArchiaRegular';font-size: 14pt; text-align: left;"><u>Snippets & Samples</u></h3>
-			</div>
-		</div>
+    <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0">
+            <h4><u>Portfolio</u></h4>
+          </div>
+          <div class="col-md-12 col-lg-6 text-start text-lg-end">
+            <div id="filters" class="filters">
+              <a href="#" data-filter="*" class="active" style="font-family: BasierRegular; font-size: 10pt;">All</a>
+              <a href="#" data-filter=".personal" style="font-family: BasierRegular; font-size: 10pt;">Personal</a>
+              <a href="#" data-filter=".academic" style="font-family: BasierRegular; font-size: 10pt;">Academic</a>
+              <a href="#" data-filter=".professional"
+                style="font-family: BasierRegular; font-size: 10pt;">Professional</a>
+              <!-- <a href="#" data-filter=".experiments"
+                style="font-family: BasierRegular; font-size: 10pt;">Experiments</a> -->
+              <a href="#" data-filter=".built" style="font-family: BasierRegular; font-size: 10pt;">Built</a>
+              <a href="#" data-filter=".software" style="font-family: BasierRegular; font-size: 10pt;">Code</a>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio-grid" class="row" style="--bs-gutter-y: 0.5rem; --bs-gutter-x: 1rem">
+          
+          <!-- <div class="item professional software col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="pages/reakt.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Reakt Toolkit</h3>
+                <span>Grasshopper plugin</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/reakt.png">
+            </a>
+          </div> -->
+          <div class="item professional built col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/khudibari.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Khudi Bari @ RA</h3>
+                <span>2022</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/khudi_bari.png">
+            </a>
+          </div>
+          
+          <!-- <div class="item professional col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/redsea.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Red Sea: Timber Lattice Gridshells</h3>
+                <span>2020</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/gridshells.png">
+            </a>
+          </div> -->
+          <!-- <div class="item professional col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="pages/iass.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>IASS Pavillion 2021</h3>
+                <span>Project</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/iass_thumb.png">
+            </a>
+          </div> -->
+          <div class="item professional built col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/alameda.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Beken</h3>
+                <span>2021</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/alameda.png">
+            </a>
+          </div>
+          <!-- <div class="item academic software col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/qd.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Quality Diversity: Shape Optimisation</h3>
+                <span>PrismArch</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/ai.png">
+            </a>
+          </div> -->
+          
+          <!-- <div class="item experiments professional col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/wip.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Form Active Modeling</h3>
+                <span>Experimentation</span>
+              </div>
+              <img class="img-fluid" src="assets/Form Active Modeling/IMG_0710.png">
+            </a>
+          </div> -->
+          <div class="item personal built col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/osb.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Stool Samples</h3>
+                <span>2022</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/stool3.png">
+            </a>
+          </div>
+          <div class="item personal software col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="https://github.com/joelhi/g3-gh" target="_blank"  class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>g3-gh</h3>
+                <span>2021</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/mesh_thumb.png">
+            </a>
+          </div>
+          <div class="item academic col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/difference.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>What difference does it make?</h3>
+                <span>2018</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/difference_thumb.png">
+            </a>
+          </div>
+          <!-- <div class="item experiments software col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="pages/work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Mesh processing</h3>
+                <span>Software / Code</span>
+              </div>
+              <img class="img-fluid" src="assets/Meshing/bfs_Planar-assets/bfs_Planar.png">
+            </a>
+          </div> -->
+          <div class="item professional built col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/sab.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>SAB Forest of Columns</h3>
+                <span>2016</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/SAB.png">
+            </a>
+          </div>
+          <!-- <div class="item professional built col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/leland.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Leland Sculpture</h3>
+                <span>2022</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/leland2.png">
+            </a>
+          </div> -->
+          <div class="item academic col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/aag.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Digitally Implicit Morphologies</h3>
+                <span>2018</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/aag.png">
+            </a>
+          </div>
+          <div class="item academic software col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/iga.html"  class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Isogeometric Analysis</h3>
+                <span>M.Sc thesis</span>
+                <span>2019</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/iga.png">
+            </a>
+          </div>
+          <div class="item professional software col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/structural_Meshing.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Structural Meshing</h3>
+                <span>2021</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/structural_Meshing.png">
+            </a>
+          </div>
+          <div class="item academic col-sm-6 col-md-4 col-lg-3 mb-2">
+            <a href="pages/bb.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Borderline Bodies</h3>
+                <span>M.Arch Thesis</span>
+                <span>2019</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/bb.png">
+            </a>
+          </div>
+          <!-- <div class="item academic col-sm-6 col-md-4 col-lg-3 mb-3">
+            <a href="pages/bb.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>K-means clustering Toolkit</h3>
+                <span>Grasshopper plugin</span>
+              </div>
+              <img class="img-fluid" src="assets/Thumbnails/bb.png">
+            </a>
+          </div> -->
+          
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
 
-		<div class="row">
-			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
-					<a href="pages/iass.html">
-						<img src="assets/Thumbnails/iass_thumb.png" alt="IASS Pavillion" width="1000">
-					</a>
-			</div>
-			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
-				<a href="pages/difference.html">
-					<img src="assets/Thumbnails/difference_thumb.png" alt="3D print assembly" width="1000">
-				</a>
-				<br>
-				<br>
-				<a href="pages/aag.html">
-					<img src="assets/Thumbnails/aag.png" alt="3D print assembly" width="1000">
-				</a>
-			</div>
-			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
-				<a href="pages/g3.html">
-					<img src="assets/Thumbnails/mesh_thumb.png" alt="Bunny Skeleton Mesh" width="1000">
-				</a>
-			</div>
-			<div class="col col-3-of-12 col-s-4-of-4 left" id="content">
-			</div>
-		</div>
+    <div style="margin-bottom: 200px;"></div>
 
-		<div style="margin-bottom: 200px;"></div>
+    <!-- ======= About Section ======= -->
+    <section class="about">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-5">
+            <h4>About</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 align-items-right">
+            <img src="assets/Portrait/joel_ny_small.png" alt="Me" width="300">
+            <div style="margin-bottom: 50px;"></div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+              My name is Joel Hilmersson and I'm a versatile computational designer with a background in both architecture and engineering with 
+              experience working on design projects, software and R&D in Sweden, Norway, Germany and the UK.      
+              <br>
+              <br>
+              My main interest lies in computational tools for geometry, analysis and creativity at the intersection of the disciplines, 
+              and how we can leverage technology to turn innovative concepts into built reality.
+              <br>
+              <br>
+              <b>This page is still a bit work in progress, but please have a look!</b>
+            </p>
+          </div>
 
-		<div class="row">
-			<div class="col col-4-of-8">
+        </div>
+      </div>
+    </section><!-- End About Section -->
 
-				<p style="font-family: 'ArchiaRegular'; font-size:12px">
-					Fonts: <a href="https://www.atipofoundry.com/fonts/archia"; target="_blank">Archia</a> <a href="https://www.atipofoundry.com/fonts/basier"; target="_blank">Basier</a>
-				</p>
-			</div>
-		</div>
+    <div style="margin-bottom: 200px;"></div>
 
-		
+    <!-- ======= Papers Section ======= -->
+    <section class="about">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-5">
+            <h4>Publications & Research Contributions</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 style="font-size: 10pt;">2022</h4>
+            <a class="main" href="https://cordis.europa.eu/project/id/952002/results" target="_blank"
+              style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+              D2.3 - Final revised version of parametric space of design, algorithms for AI assisted editing/design in VR, and algorithms for designer modelling
+            </a>
 
-	</div>
-	<div style="margin-bottom: 25px;"></div>
+            <p>
+              Horizon 2020 Deliverable as part of the PrismArch research project.
+            </p>
+          </div>
+
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 style="font-size: 10pt;">2021</h4>
+            <a class="main" href="https://cordis.europa.eu/project/id/952002/results" target="_blank"
+              style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+              D1.2 - Elaborated report of cross-discipline principles-rules-constraints, and interfaces definition for
+              cross-disciplinary and multi-simulation perspectives in VR
+            </a>
+
+            <p>
+              Horizon 2020 Deliverable as part of the PrismArch research project.
+            </p>
+            <br>
+            <a class="main" href="assets/papers/spatial-structures-2020-21-paper-Geldeford Riband.pdf" target="_blank"
+              style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+              The Geldeford Riband
+            </a>
+            <p>
+              D. Godfrey, J. Dudley, J.Hilmersson
+            </p>
+            <p style="color: black;">
+              Proceedings IASS Symposia 2021
+            </p>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 style="font-size: 10pt;">2019</h4>
+            <a class="main" href="assets/papers/IASS2019_Isogeometric_JH.pdf" target="_blank"
+              style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+              Isogeometric Analysis & Form Finding for thin shells
+            </a>
+            <p>
+              J. Hilmersson, J. Olsson, M. Ander, F. Larsson
+            </p>
+            <p style="color: black;">
+              Proceedings IASS Symposia 2019
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Papers Section -->
+
+    <div style="margin-bottom: 200px;"></div>
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="mb-1" style="font-size: 8pt;">&copy; Copyright MyPortfolio. All Rights Reserved</p>
+            <div class="credits" style="font-size: 8pt;">
+              <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
+          -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
