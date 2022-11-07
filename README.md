@@ -1,9 +1,9 @@
 # joelhi.github.io
-Online portfolio.
+Online portfolio showing a collection of work both personal, professional and academic.
 
-This website is a rework of the following template at BootstrapMade:
+The website is a customisation of the following template at BootstrapMade:
 
 [Template](https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/)
 
-Available at:
+It is available at:
 [joelhilmersson.com](https://joelhilmersson.com/)
