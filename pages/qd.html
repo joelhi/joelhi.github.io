@@ -53,7 +53,7 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6">
-            <h2 style="font-size: 20pt;"><u>PrismArch: Quality-Diversity</u></h2>
+            <h2 style="font-size: 20pt;"><u>Quality-Diversity Optimisation</u></h2>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-md-4 ml-auto">
               <div>
-                <h3 class="h3">Quality-Diversity search for shape optimsation.</h3>
+                <h3 class="h3">Quality-Diversity for shape optimsation of shell structures.</h3>
                 <p class="mb-4"><span class="text-muted">Research / Code</span></p>
                 <p style="color: black;"><b>Context</b></p>
                 <p><i>Part of PrismArch research project</i></p>
@@ -78,7 +78,7 @@
 
                 <div class="mb-5">
                   <p>For the PrismArch project the team at University of Malta developed a framework for Quality-Diversity search, which 
-                    I applied to shape optimisation of shells o explore how the algorithm could be used as a design tool.
+                    I applied to shape optimisation of shells to explore how the algorithm could be used as a design tool.
                   </p>
 
                 </div>
@@ -91,58 +91,111 @@
                 <p>2022</p>
                 <br>
                 <p style="color: black;"><b>External Links</b></p>
-                <p><a href="#" class="main">Project Page</a></p>
-                <p><a href="#" class="main">Deliverable 2.3</a></p>
+                <p><a href="../assets/papers/IASS2023_Design_Space_Exploration_of_Shell_Structures_Using_Quality_Diversity_Algorithms.pdf" class="main" target="_blank">IASS Paper</a></p>
+                <p><a href="https://prismarch-h2020.eu/download/497" class="main" target="_blank">PrismArch Deliverable 2.3</a></p>
               </div>
             </div>
           </div>
           <div style="margin-bottom: 100px;"></div>
           <div class="row"> 
             <div class="col-md-8" data-aos="fade-up">
+              <h4 style="font-size: 14pt;">Algorithm & Implementation</h4>
               <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
-                <b>Aribererunt.</b> Ratemporpos debissint dolupta testis dolupta tempori osapers perisciet, si imaio
-                minissitat labor aspedias utem cullaci tasint ilique aboreru ptatur reiciditaero dolore, nobis
-                explit quiasi sincid qui repudist,
-                officaborios qui que ipsa aut <b>offictatist</b>, etureribus etur?
-                Ad qui non rerchil laborrum, utae nempor am fugiae magnis accatur, cuscipsam accus doluptatent.
-                Videlitaest, nullore mporum inti untemqui adipsantia volore exeribe ristectus.
-                Ur aditecea ad maximil laboriores res sed magnis ut quidusae alitistiis sequos porum reiumquost, te
-                odis aut faceribus, offictur aligni nest, quo dolorro blabore sequae aperum audiandus, eosti volorem
+                A custom version of the MAP-Elites algorithm was implemented which takes inspiration from Feasible-Infeasible type
+                genetic algorithms to enable MAP-Elites to do constrained optimisation. The custom algorithm is outlined below and 
+                is using two archive maps, one for feasible solutios, which are those that fullfill a displacement critera, and another
+                for those that don't. The solutions that are not feasible will still be used to evolve new individuals with the idea that
+                even those that don't fullfill the criteria still capture some aspect of the design space, and could still generate feasible offspring
+                at a later stage. The algorithm is presented in detail, both in the  <a class="main" href="https://prismarch-h2020.eu/download/497" target="_blank"
+                style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+                PrismArch Deliverable
+              </a>, and following <a href="../assets/papers/IASS2023_Design_Space_Exploration_of_Shell_Structures_Using_Quality_Diversity_Algorithms.pdf" class="main" target="_blank">IASS Paper</a>
               </p>
               <br>
               <br>
               <br>
               <img src="../assets/Horizon AI Research/Algorithm-01.png" alt="Image" class="img-fluid">
+              <p><i>Outline of the FI-MAP-Elites algorithm developed.</i></p>
               <br>
               <br>
               <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
-                <b>Aribererunt.</b> Ratemporpos debissint dolupta testis dolupta tempori osapers perisciet, si imaio
-                minissitat labor aspedias utem cullaci tasint ilique aboreru ptatur reiciditaero dolore, nobis
-                explit quiasi sincid qui repudist,
-                officaborios qui que ipsa aut <b>offictatist</b>, etureribus etur?
-                Ad qui non rerchil laborrum, utae nempor am fugiae magnis accatur, cuscipsam accus doluptatent.
-                Videlitaest, nullore mporum inti untemqui adipsantia volore exeribe ristectus.
-                Ur aditecea ad maximil laboriores res sed magnis ut quidusae alitistiis sequos porum reiumquost, te
-                odis aut faceribus, offictur aligni nest, quo dolorro blabore sequae aperum audiandus, eosti volorem
-                excerumquia plibusciet odictur, solest
-                et quidus dolupta quasped molorumqui de vel expelle stiunt.
-                Igent aboremque volorem. Tionseque volorror maximpelia solupta turitibus perro officiis eossequi nis
-                perio il es ea
-                nonectem res eaquae nimolec tatiam qui ut que susda plibus voluptatem nimint quibus, sitibusandam
-                que optum que nis molor susam fuga. Itatibus ilia quia paris quamenecus pra volum estioritatum am
-                nobis eius est, sequia venieniet quas dolest arum re, vendit et ipis enesed moluptate doluptatiam,
-                aut enis consequatur sus debis dereped molo conseque acerum eaturemque aut dem renditatur?
-                Sintiossed ernate lautenda doluptatem incil ipit essum voloria doloren ihiliquae lis dolupta
-                speratem aligenitate.
+                The algorithm was implemented within the Grasshopper environment for Rhino as a set of components.
+                These components allow the user to assign a base shape, as a SubD, along with point variability and 
+                boundary conditions. Feeding this along with some feature characterisations to the solver will then explore 
+                the parameterised problem and populate the feature map. The optimisation uses geometric aspects for feature
+                categorisation and elastic energy as fitness. The elastic energy is evaluated internally using Karamba in the 
+                evolution, and the final fitness is selected as the highest internal elastic energy of all the defined loadcases.
               </p>
               <br>
               <br>
               <br>
+              <img src="../assets/Horizon AI Research/toolbar.PNG" alt="Image" class="img-fluid">
+              <p><i>Grasshopper toolbar.</i></p>
+              <br>
+              <br>
+              <img src="../assets/Horizon AI Research/done_async.PNG" alt="Image" class="img-fluid">
+              <p><i>Main solver component.</i></p>
+              <br>
+              <br>
+              <br>
+              <h4 style="font-size: 14pt;">Simple test case</h4>
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                Initial studies, to understand the general behaviour of the algorithm and how the map could be used as a design tools, were 
+                carried out on simple shell shapes. Below is an example of these with a shell supported on four points with a circular shape 
+                in plan, subject to an evenly distributed load. For this example the two features were chosen as the height of the middle bit of the shell, and the difference in height
+                between the free spanning edges. This aims to capture two critical aspects of this, namely the general height along with the symmetry
+                of the arches. 
+              </p>
+              <br>
+              <br>
+              <br>
+              <img src="../assets/Horizon AI Research/circular_base.png" alt="Image" class="img-fluid">
+              <p><i>Base geometry and feature categorisation for one of the simple test cases which is a circular base shape supported on four points.</i></p>
+              <p><i>The green arrows show the potential variation in the control points and the orange arrow show the boundary conditions.</i></p>
+              <br>
+              <br>
+              <br>
               <img src="../assets/Horizon AI Research/IMG_1309.GIF" alt="Image" class="img-fluid">
+              <p><i>Evolution of a map for the problem above, showing the fittest individuals have a high middle and low, symmetric arches, creating a dome like shape.</i></p>
+            </div>
+          </div>
+          <div style="margin-bottom: 100px;"></div>
+          <div class="row"> 
+            <div class="col-md-8" data-aos="fade-up">
+              <h4 style="font-size: 14pt;">Real world case study</h4>
+              <p style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #555555;">
+                To test the way the algorithm could be applied in a more realistic scenario, a further study was undertaken
+                which was inspired by the shells found in the design for the Algier presidential palace, which can be seen <a class="main" href="https://www.patrikschumacher.com/Texts/The%20Congeniality%20of%20Architecture%20and%20Engineering.html" target="_blank"
+                style="font-family: 'BasierRegular';font-size: 10pt; text-align:left; color: #000;">
+                here
+              </a>. This was chosen as it provides an interesting, yet regular, shell which is not perfectly form found, as it is a product
+              of negotiation between the architect and the engineer. Further, to design this shell, engineers at AKT II used generit algorithms
+              to find a high performing solution [1], which positions the original design within the lineage of algorithms which the one we are exploring
+              follows. This is further discussed in the IASS paper where the highest performing solutions from both processes also are compared. The parameterisation
+              for the shell along with the behaviour categorisations is shown below.  
+              </p>
+              <br>
+              <img src="../assets/Horizon AI Research/BaseShape.png" alt="Image" class="img-fluid">
+              <p><i>The base geometry for the shape parameterisation. Left shows the control mesh and right shows the smooth shell shape.</i></p>
+              <p><i>The green arrows show the potential variation in the control points and the orange arrow show the boundary conditions.</i></p>
+              <br>
+              <img src="../assets/Horizon AI Research/Feasible_dark_small.png" alt="Image" class="img-fluid">
+              <p><i>The map of feasible solutions for the Algiers Presidential Palace shell.</i></p>
+              <p><i>Yellow shows higher performing individuals.</i></p>
+              <br>
+              <img src="../assets/Horizon AI Research/disp_small.png" alt="Image" class="img-fluid">
+              <p><i>The map above with displacement plot as false colour.</i></p>
+              <p><i>Red shows the location with highest displacement relative to each shell.</i></p>
+              <br>
+              <img src="../assets/Horizon AI Research/Infeasible_small.png" alt="Image" class="img-fluid">
+              <p><i>The map of infeasible solutions for the Algiers Presidential Palace shell.</i></p>
+              <p><i>White shows solutions closer to being feasible.</i></p>
               <br>
               <br>
               <br>
-              <img src="../assets/Horizon AI Research/IMG_1310.GIF" alt="Image" class="img-fluid">
+              <div style="margin-bottom: 50px;"></div>
+              <p style="color: #000;">[1] J. Janssen and R. Parker, “Hybrid Shells”, in Design Engineering Refocused, Wiley 2017, H.
+                Kara and D. Bosia, Eds.</p> 
             </div>
           </div>
         </div>
